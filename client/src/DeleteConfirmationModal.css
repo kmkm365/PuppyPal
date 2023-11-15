@@ -1,0 +1,25 @@
+.deleteModal {
+
+    position: absolute;
+    margin-top: 150px;
+    font-size: 25px;
+    inset: 40px;
+    border: 1px solid #FCF2DC;
+    background-color: #FCF2DC;
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+}
+
+.deleteBtn {
+    width: 60px;
+    height: 30px;
+    font-size: 22px;
+    background-color: #FFE39A;
+    color: #E08213;
+    border: 2px solid #E08213;
+    margin: 15px;
+}

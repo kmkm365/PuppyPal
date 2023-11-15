@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'GangwonEduSaeeum_OTFMediumA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'GangwonEduSaeeum_OTFMediumA';
+  font-size: 20px;
+  height: 100vh;
+  max-height: 700px;
+  /* 최대 높이를 600px로 설정 (최대 높이 조절 가능) */
+  overflow-y: auto;
+  padding: 1.0rem 2.0rem;
+  border-radius: 3%;
+  text-align: center;
+  background-color: #FCF2DC;
+
+}
+
+.titleBox {
+  margin: 100px 0;
+
+}
+
+.titleImg {
+  width: 300px;
+}

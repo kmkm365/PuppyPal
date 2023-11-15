@@ -1,0 +1,13 @@
+.editFormBtn {
+    width: 85px;
+    height: 45px;
+    font-size: 25px;
+    background-color: #FFE39A;
+    color: #E08213;
+    border: 2px solid #E08213;
+    margin: 15px;
+}
+
+.editFormBtnBox {
+    text-align: center;
+}

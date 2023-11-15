@@ -1,0 +1,49 @@
+header img {
+    width: 202px;
+    margin: 10px 0;
+}
+
+header {
+    width: 375px;
+    position: absolute;
+    top: 0%;
+    height: 60px;
+    left: 0;
+    border-bottom: solid 5px #F58888;
+    background-color: #FCF2DC;
+    padding: 0;
+}
+
+.infoBox {
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+.addBtn {
+    width: 85px;
+    height: 45px;
+    font-size: 25px;
+    background-color: #FFE39A;
+    color: #E08213;
+    margin-left: 240px;
+    border: 2px solid #E08213;
+}
+
+.dogInfoBox {
+    border: 3px solid #F4C6C6;
+    background-color: #F4C6C6;
+    padding-top: 15px;
+    border-radius: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.edBtn {
+    width: 60px;
+    height: 30px;
+    font-size: 22px;
+    background-color: #FFE39A;
+    color: #E08213;
+    border: 2px solid #E08213;
+    margin: 15px;
+}

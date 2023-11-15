@@ -1,0 +1,15 @@
+header img {
+    width: 202px;
+    margin: 10px 0;
+}
+
+header {
+    width: 375px;
+    position: absolute;
+    top: 0%;
+    height: 60px;
+    left: 0;
+    border-bottom: solid 5px #F58888;
+    background-color: #FCF2DC;
+    padding: 0;
+}
