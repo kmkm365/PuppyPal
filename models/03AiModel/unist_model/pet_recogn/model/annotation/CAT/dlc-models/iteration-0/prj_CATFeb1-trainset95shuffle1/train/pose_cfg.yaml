@@ -1,0 +1,70 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+- - 7
+- - 8
+- - 9
+- - 10
+- - 11
+- - 12
+- - 13
+- - 14
+all_joints_names:
+- nose
+- front_head_bone
+- angle_of_mouth
+- mandible_symphysis_body
+- thoracic_vertebrae
+- right_point_of_elbow
+- left_point_of_elbow
+- right_carpus
+- left_carpus
+- right_patella
+- left_patella
+- right_calcaneus
+- left_calcaneus
+- lumbosacral_junction
+- end_tail
+batch_size: 4
+cropratio: 0.4
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_prj_CATFeb1/prj_CAT_JUN95shuffle1.mat
+dataset_type: imgaug
+display_iters: 1000
+global_scale: 0.8
+init_weights: /home/islab/anaconda3/envs/DLC-GPU/lib/python3.7/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+intermediate_supervision: false
+intermediate_supervision_layer: 12
+location_refinement: true
+locref_huber_loss: true
+locref_loss_weight: 0.05
+locref_stdev: 7.2801
+max_input_size: 1500
+metadataset: training-datasets/iteration-0/UnaugmentedDataSet_prj_CATFeb1/Documentation_data-prj_CAT_95shuffle1.pickle
+min_input_size: 64
+mirror: false
+multi_step:
+- - 0.005
+  - 10000
+- - 0.02
+  - 430000
+- - 0.002
+  - 730000
+- - 0.001
+  - 1030000
+net_type: resnet_50
+num_joints: 15
+pairwise_huber_loss: false
+pairwise_predict: false
+partaffinityfield_predict: false
+pos_dist_thresh: 17
+project_path: /home/islab/Desktop/annotation/prj/species/prj_CAT-JUN-2021-02-01
+rotation: 25
+rotratio: 0.4
+save_iters: 50000
+scale_jitter_lo: 0.5
+scale_jitter_up: 1.25
