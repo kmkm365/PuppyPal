@@ -1,0 +1,2042 @@
+Task: prj_DOG
+TrainingFraction:
+- 0.95
+alphavalue: 0.7
+batch_size: 8
+bodyparts:
+- nose
+- front_head_bone
+- angle_of_mouth
+- mandible_symphysis_body
+- thoracic_vertebrae
+- right_point_of_elbow
+- left_point_of_elbow
+- right_carpus
+- left_carpus
+- right_patella
+- left_patella
+- right_calcaneus
+- left_calcaneus
+- lumbosacral_junction
+- end_tail
+colormap: plasma
+corner2move2:
+- 50
+- 50
+croppedtraining: false
+cropping: false
+date: Feb1
+default_augmenter: imgaug
+default_net_type: resnet_50
+dotsize: 12
+iteration: 0
+move2corner: true
+multianimalproject: false
+numframes2pick: 20
+pcutoff: 0.6
+project_path: ./model/annotation/DOG
+scorer: JUN
+skeleton:
+- - nose
+  - angle_of_mouth
+- - nose
+  - front_head_bone
+- - angle_of_mouth
+  - front_head_bone
+- - angle_of_mouth
+  - mandible_symphysis_body
+- - front_head_bone
+  - thoracic_vertebrae
+- - thoracic_vertebrae
+  - lumbosacral_junction
+- - lumbosacral_junction
+  - end_tail
+- - thoracic_vertebrae
+  - left_point_of_elbow
+- - left_point_of_elbow
+  - left_carpus
+- - thoracic_vertebrae
+  - right_point_of_elbow
+- - right_point_of_elbow
+  - right_carpus
+- - lumbosacral_junction
+  - left_patella
+- - left_patella
+  - left_calcaneus
+- - lumbosacral_junction
+  - right_patella
+- - right_patella
+  - right_calcaneus
+skeleton_color: black
+snapshotindex: -1
+start: 0
+stop: 1
+video_sets:
+  /media/islab/data/vid/dog-bodylower-000008.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000016.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-000028.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000047.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000049.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000061.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000062.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000075.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000078.mp4:
+    crop: 0, 1280, 0, 720
+  /media/islab/data/vid/dog-bodylower-000086.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000119.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000120.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000139.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000144.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000145.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000159.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000160.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000169.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000170.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000232.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000283.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000306.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000308.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000312.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000315.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000326.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000329.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000340.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000353.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000366.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000367.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000368.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000372.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000373.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000375.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000391.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000396.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000408.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000418.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000420.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000423.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000427.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000429.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000432.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000441.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000442.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000443.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000455.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000456.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000469.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000486.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000489.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000527.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000537.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000563.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000568.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000577.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000580.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000582.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000599.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000612.mp4:
+    crop: 0, 1454, 0, 1026
+  /media/islab/data/vid/dog-bodylower-000620.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000623.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000629.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodylower-000633.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000634.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000637.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000651.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000656.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000660.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000662.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-000727.mp4:
+    crop: 0, 1614, 0, 830
+  /media/islab/data/vid/dog-bodylower-000731.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000803.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000811.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000816.mp4:
+    crop: 0, 1712, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000841.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000846.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000868.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodylower-000888.mp4:
+    crop: 0, 1080, 0, 964
+  /media/islab/data/vid/dog-bodylower-000935.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000936.mp4:
+    crop: 0, 1516, 0, 856
+  /media/islab/data/vid/dog-bodylower-000943.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000946.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000956.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-000966.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000976.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000978.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000983.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000984.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-000986.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000988.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-000993.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodylower-001005.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001035.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001036.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001056.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001065.mp4:
+    crop: 0, 1558, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001089.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001104.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001109.mp4:
+    crop: 0, 1684, 0, 1078
+  /media/islab/data/vid/dog-bodylower-001113.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001119.mp4:
+    crop: 0, 1054, 0, 1902
+  /media/islab/data/vid/dog-bodylower-001135.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001153.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001156.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001183.mp4:
+    crop: 0, 988, 0, 1304
+  /media/islab/data/vid/dog-bodylower-001189.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001200.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001210.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001212.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001234.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001239.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodylower-001243.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001246.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodylower-001255.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001264.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001265.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001266.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001275.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001279.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001295.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001301.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001319.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001329.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001332.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001340.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001342.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001355.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001358.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001365.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001367.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001370.mp4:
+    crop: 0, 1520, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001375.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001377.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001383.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001385.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001388.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001390.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001391.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001404.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001405.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001406.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001410.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001411.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001414.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001418.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001420.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001422.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001428.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001429.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001441.mp4:
+    crop: 0, 1080, 0, 2268
+  /media/islab/data/vid/dog-bodylower-001442.mp4:
+    crop: 0, 1080, 0, 2268
+  /media/islab/data/vid/dog-bodylower-001443.mp4:
+    crop: 0, 1080, 0, 2268
+  /media/islab/data/vid/dog-bodylower-001444.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001450.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001458.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001460.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001461.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001464.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001468.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001470.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001482.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001490.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001492.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001495.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001498.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001501.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001506.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001507.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001533.mp4:
+    crop: 0, 1804, 0, 912
+  /media/islab/data/vid/dog-bodylower-001536.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001545.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001547.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001550.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001570.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001575.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-bodylower-001577.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-bodylower-001585.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001589.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001610.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001618.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001619.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001625.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001632.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001633.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001635.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001637.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001638.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001643.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001644.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001649.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001651.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001652.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001653.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001655.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001657.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001658.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001660.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001661.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001665.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001666.mp4:
+    crop: 0, 1916, 0, 844
+  /media/islab/data/vid/dog-bodylower-001667.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001684.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001690.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001694.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001697.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001709.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001710.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001711.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001712.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001718.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001722.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001730.mp4:
+    crop: 0, 1618, 0, 824
+  /media/islab/data/vid/dog-bodylower-001735.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001741.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001749.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001751.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-001767.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001831.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001833.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001849.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001865.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001872.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001922.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001935.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001946.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-001965.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001966.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-001995.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002003.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002009.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002026.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002034.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002044.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002045.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002049.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002053.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002064.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002065.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002069.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002082.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002084.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002086.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002094.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002113.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002119.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002126.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002129.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002132.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002134.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002143.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002144.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002145.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002153.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002154.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002162.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002169.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-002173.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002179.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002184.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002193.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002194.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-002206.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002209.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002241.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002249.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002251.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002259.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002263.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-bodylower-002304.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002313.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002314.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002315.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002316.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002353.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002366.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002379.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002414.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002423.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002443.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002445.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002453.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-002475.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002486.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002503.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002509.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002513.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002514.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002524.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002573.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002574.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002664.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002694.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodylower-002705.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002713.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002715.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002719.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002749.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002752.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002754.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002763.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002771.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002774.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002781.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002782.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002789.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002793.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002805.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002836.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002839.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002867.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002875.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002881.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodylower-002882.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002893.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-bodylower-002903.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002921.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-002922.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002929.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-002965.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-003005.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003009.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003025.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003043.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-003263.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-bodylower-003283.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003319.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003324.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003353.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003433.mp4:
+    crop: 0, 2134, 0, 1686
+  /media/islab/data/vid/dog-bodylower-003434.mp4:
+    crop: 0, 2046, 0, 1858
+  /media/islab/data/vid/dog-bodylower-003484.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003493.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-003574.mp4:
+    crop: 0, 940, 0, 1080
+  /media/islab/data/vid/dog-bodylower-003631.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-003654.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-003771.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-003773.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-004294.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-004739.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-bodylower-004746.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodylower-004861.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-bodylower-004862.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodylower-004944.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-bodylower-008134.mp4:
+    crop: 0, 856, 0, 726
+  /media/islab/data/vid/dog-bodyscratch-002894.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodyscratch-002901.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyscratch-002936.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodyscratch-003309.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-bodyscratch-003544.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyscratch-004844.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyscratch-004894.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-000681.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-000757.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-000875.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-000878.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-000879.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-000952.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-bodyshake-000965.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-001023.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-001136.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-001184.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-001185.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-001512.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-001612.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-001750.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-bodyshake-002739.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-003079.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodyshake-003234.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-bodyshake-003279.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-003299.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-bodyshake-003674.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-000019.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000029.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000084.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000091.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000127.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000158.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000172.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000174.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000196.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000230.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000268.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-000339.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000394.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000424.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000453.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000602.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000608.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000650.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-000683.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-feetup-000722.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-000783.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-feetup-000802.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-000882.mp4:
+    crop: 0, 996, 0, 1648
+  /media/islab/data/vid/dog-feetup-000895.mp4:
+    crop: 0, 814, 0, 1430
+  /media/islab/data/vid/dog-feetup-000915.mp4:
+    crop: 0, 1080, 0, 2400
+  /media/islab/data/vid/dog-feetup-001078.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-001282.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-001312.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-001337.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-feetup-001354.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-001364.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-001565.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-001593.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-001642.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-001809.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-001886.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-001903.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002033.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002216.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002243.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002374.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-002721.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002722.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-002729.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-002924.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-002999.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-003113.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-003114.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-003134.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-feetup-003581.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-004816.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-feetup-004824.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-004854.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-004856.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-007634.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-feetup-008044.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000023.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000137.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000190.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000192.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000328.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000349.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000482.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-000514.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000591.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000659.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-footup-000725.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000730.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000735.mp4:
+    crop: 0, 1514, 0, 1080
+  /media/islab/data/vid/dog-footup-000814.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000830.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-000836.mp4:
+    crop: 0, 1440, 0, 1920
+  /media/islab/data/vid/dog-footup-000843.mp4:
+    crop: 0, 1760, 0, 1080
+  /media/islab/data/vid/dog-footup-000893.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001006.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001138.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001149.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001169.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001195.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001196.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001198.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001226.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001262.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001269.mp4:
+    crop: 0, 1458, 0, 1080
+  /media/islab/data/vid/dog-footup-001465.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-001499.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-001513.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-001567.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-footup-001584.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-001588.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001792.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-001851.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001859.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001873.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-001883.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-001962.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-002063.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-002075.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-002081.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002109.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-002205.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002235.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002409.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-002554.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-002571.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002704.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002731.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002866.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-002935.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-002984.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-footup-003124.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-footup-003173.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-footup-003731.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-footup-004741.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-footup-004879.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-000022.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-000042.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-000163.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-000179.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-000181.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-000193.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-000199.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-000222.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-000733.mp4:
+    crop: 0, 1584, 0, 1080
+  /media/islab/data/vid/dog-heading-000829.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-001064.mp4:
+    crop: 0, 1654, 0, 1080
+  /media/islab/data/vid/dog-heading-001204.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-heading-001252.mp4:
+    crop: 0, 1298, 0, 942
+  /media/islab/data/vid/dog-heading-001313.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-001397.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-001398.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-001452.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-001696.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-002079.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-heading-002699.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-heading-002983.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000001.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000021.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000025.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000036.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000063.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000064.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000083.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000126.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000129.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-lying-000171.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000173.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000175.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000182.mp4:
+    crop: 0, 720, 0, 1520
+  /media/islab/data/vid/dog-lying-000183.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000184.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000188.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000191.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000214.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000267.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000305.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000309.mp4:
+    crop: 0, 1280, 0, 720
+  /media/islab/data/vid/dog-lying-000324.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000344.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000347.mp4:
+    crop: 0, 1280, 0, 720
+  /media/islab/data/vid/dog-lying-000369.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000398.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000402.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000421.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000459.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000460.mp4:
+    crop: 0, 1596, 0, 1080
+  /media/islab/data/vid/dog-lying-000463.mp4:
+    crop: 0, 1280, 0, 720
+  /media/islab/data/vid/dog-lying-000490.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000581.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000639.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-000673.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000704.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000738.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000756.mp4:
+    crop: 0, 1284, 0, 760
+  /media/islab/data/vid/dog-lying-000759.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-000772.mp4:
+    crop: 0, 1078, 0, 1626
+  /media/islab/data/vid/dog-lying-000825.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-000848.mp4:
+    crop: 0, 1278, 0, 1038
+  /media/islab/data/vid/dog-lying-000901.mp4:
+    crop: 0, 720, 0, 720
+  /media/islab/data/vid/dog-lying-001024.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001026.mp4:
+    crop: 0, 1440, 0, 1920
+  /media/islab/data/vid/dog-lying-001049.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-lying-001083.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001155.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001302.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001304.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001305.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001308.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001330.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-lying-001393.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001435.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001439.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001494.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001559.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001574.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001586.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-001630.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001824.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-001869.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-lying-001916.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-lying-001949.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002005.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002022.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002046.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002062.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002083.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002092.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002095.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002201.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002203.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002273.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-lying-002294.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002393.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002395.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002545.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002549.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002559.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002675.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002681.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002709.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-lying-002741.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002755.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002784.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002786.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-002799.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-002816.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002821.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002849.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-002851.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-002923.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-002925.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-lying-002926.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-003029.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-lying-003209.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-lying-003364.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-003401.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-003684.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-lying-004736.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-lying-004864.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-lying-004994.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-mounting-000265.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-000438.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-000566.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-000885.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-001328.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-001343.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-002444.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-002732.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-mounting-003094.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-mounting-003293.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-sit-000197.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-sit-000202.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000207.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000216.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000272.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000278.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000279.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000285.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000296.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000301.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-000307.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000313.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000314.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000318.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000331.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000332.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000359.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000374.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000380.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000381.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000399.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000406.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000437.mp4:
+    crop: 0, 1072, 0, 1182
+  /media/islab/data/vid/dog-sit-000444.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000457.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000464.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000504.mp4:
+    crop: 0, 1080, 0, 2224
+  /media/islab/data/vid/dog-sit-000541.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000593.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000615.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000621.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000635.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000636.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000661.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-000663.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-000679.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000695.mp4:
+    crop: 0, 888, 0, 1054
+  /media/islab/data/vid/dog-sit-000707.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000804.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-000845.mp4:
+    crop: 0, 1338, 0, 1012
+  /media/islab/data/vid/dog-sit-000860.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000908.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000941.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-000957.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-sit-000958.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-sit-000975.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-000992.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001003.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001059.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001062.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001063.mp4:
+    crop: 0, 1080, 0, 1460
+  /media/islab/data/vid/dog-sit-001069.mp4:
+    crop: 0, 1432, 0, 1080
+  /media/islab/data/vid/dog-sit-001071.mp4:
+    crop: 0, 1440, 0, 1920
+  /media/islab/data/vid/dog-sit-001094.mp4:
+    crop: 0, 1612, 0, 1080
+  /media/islab/data/vid/dog-sit-001096.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001115.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001128.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001129.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001193.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001219.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001233.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-sit-001235.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-sit-001236.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001240.mp4:
+    crop: 0, 962, 0, 1640
+  /media/islab/data/vid/dog-sit-001259.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001293.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001310.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001333.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001336.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001349.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001366.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001376.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001382.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001386.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001387.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001389.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001394.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001395.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001399.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001403.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001408.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001417.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001419.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001426.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001436.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001437.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001445.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001446.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001448.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001451.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001454.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001459.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001463.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001480.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001481.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001483.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001491.mp4:
+    crop: 0, 816, 0, 1286
+  /media/islab/data/vid/dog-sit-001504.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001505.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001515.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001525.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001540.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001541.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001563.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001594.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001609.mp4:
+    crop: 0, 1814, 0, 1080
+  /media/islab/data/vid/dog-sit-001620.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001621.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001622.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001627.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001629.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001640.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001648.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001656.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001659.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001662.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001671.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001672.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001681.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001725.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001777.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-sit-001783.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001787.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001819.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001829.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001834.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001835.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001836.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-001864.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001889.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001904.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-001924.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-001986.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002015.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-sit-002035.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002042.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002052.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002066.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002074.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002085.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002102.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002112.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002133.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002195.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-002231.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002274.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002323.mp4:
+    crop: 0, 1440, 0, 1920
+  /media/islab/data/vid/dog-sit-002345.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002346.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002375.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002383.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-002404.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002419.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002446.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002484.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002543.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002544.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002561.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002563.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002572.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002583.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002584.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002585.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002586.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002589.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002592.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002593.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002594.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002595.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002596.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002601.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002602.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002603.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002604.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002605.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002606.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002611.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002671.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002673.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002679.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002696.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-002701.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002703.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002714.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002726.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002743.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002745.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002751.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002759.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002761.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002762.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002769.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002772.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002773.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002779.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002841.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002843.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002845.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002864.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002889.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-002931.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-sit-002934.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002954.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002955.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-002956.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-002966.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-sit-003053.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-003354.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-003444.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-003564.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-004301.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-sit-004801.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-sit-004896.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-sit-004906.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-004916.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-sit-004992.mp4:
+    crop: 0, 720, 0, 960
+  /media/islab/data/vid/dog-sit-006184.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-tailing-000087.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000266.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000271.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000284.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000321.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000323.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000378.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000379.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000383.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000425.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000508.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000556.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000694.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000699.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000760.mp4:
+    crop: 0, 1080, 0, 1534
+  /media/islab/data/vid/dog-tailing-000798.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-000849.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-000853.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001046.mp4:
+    crop: 0, 972, 0, 1104
+  /media/islab/data/vid/dog-tailing-001092.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-001163.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001186.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001214.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001272.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001352.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001415.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001431.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001484.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001496.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001497.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001514.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-001518.mp4:
+    crop: 0, 1792, 0, 1026
+  /media/islab/data/vid/dog-tailing-001583.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001596.mp4:
+    crop: 0, 1792, 0, 1080
+  /media/islab/data/vid/dog-tailing-001628.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001631.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001634.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001839.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001841.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001843.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-001929.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-001934.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002142.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002186.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002245.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002286.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-002295.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002329.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002429.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002454.mp4:
+    crop: 0, 1440, 0, 1440
+  /media/islab/data/vid/dog-tailing-002473.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002483.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002613.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002686.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002733.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002863.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002914.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002937.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-002959.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002963.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-002964.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-002969.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-002973.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-003015.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-003044.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-003069.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-003084.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-003109.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-003213.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-003384.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-003673.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-tailing-003700.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-003712.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-tailing-004296.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-tailing-006394.mp4:
+    crop: 0, 1080, 0, 1080
+  /media/islab/data/vid/dog-taillow-000221.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-000223.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-000304.mp4:
+    crop: 0, 480, 0, 852
+  /media/islab/data/vid/dog-taillow-000333.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-000382.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-000384.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-000481.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-000484.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-000607.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-000642.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-000649.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-000883.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-000884.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-001009.mp4:
+    crop: 0, 1920, 0, 1440
+  /media/islab/data/vid/dog-taillow-001019.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001073.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001079.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001125.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-001173.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001213.mp4:
+    crop: 0, 1506, 0, 1080
+  /media/islab/data/vid/dog-taillow-001254.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001273.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-taillow-001432.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-001571.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-001617.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-001915.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-001936.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-002072.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-002166.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-002266.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-002405.mp4:
+    crop: 0, 1474, 0, 1080
+  /media/islab/data/vid/dog-taillow-002426.mp4:
+    crop: 0, 1280, 0, 720
+  /media/islab/data/vid/dog-taillow-002474.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-002609.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-taillow-002744.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-taillow-002746.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-000089.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-turn-000186.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-turn-000717.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-turn-000861.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-turn-001250.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-turn-001895.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-002076.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-002363.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-002631.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-002723.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-turn-002886.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-turn-003454.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-002764.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-walkrun-002803.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-walkrun-002946.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003014.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003083.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003229.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003243.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-walkrun-003244.mp4:
+    crop: 0, 720, 0, 1280
+  /media/islab/data/vid/dog-walkrun-003274.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003284.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003513.mp4:
+    crop: 0, 750, 0, 750
+  /media/islab/data/vid/dog-walkrun-003521.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003534.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003561.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003664.mp4:
+    crop: 0, 1920, 0, 1080
+  /media/islab/data/vid/dog-walkrun-003775.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-003779.mp4:
+    crop: 0, 1080, 0, 1920
+  /media/islab/data/vid/dog-walkrun-004288.mp4:
+    crop: 0, 1920, 0, 900
+  /media/islab/data/vid/dog-walkrun-004754.mp4:
+    crop: 0, 1080, 0, 1920
+x1: 0
+x2: 640
+y1: 277
+y2: 624
